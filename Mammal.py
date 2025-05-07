@@ -1,8 +1,8 @@
 from Animal import Animal
 
 class Mammal(Animal):
-    def __init__(self, legs=0, fins=0, wings=0):
-        super().__init__(legs, fins, wings)
+    def __init__(self, legs=0, fins=0, wings=0, tail=False):
+        super().__init__(legs, fins, wings, tail)
         
     def reproduce(self) -> str:
         result = ' Mammals give birth to live young, and raise them until they become independant'

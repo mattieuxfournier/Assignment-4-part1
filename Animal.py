@@ -7,15 +7,15 @@ class Animal(object, metaclass = ABCMeta):
         self.wings = wings
         self.tail = tail
     @abstractmethod
-    def move(self):
+    def move(self)->None:
         pass
 
     @abstractmethod
-    def sleep(self):
+    def sleep(self)->None:
         pass
 
     @abstractmethod
-    def eat(self):
+    def eat(self)->None:
         pass
 
     def reproduce(self) -> str:
